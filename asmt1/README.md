@@ -25,7 +25,7 @@ if (pids[i] < 0) {
 
 Else, `fork()` returns `0` and we can proceed to obtain the child's pid with `getpid()`. A switch statement is used to distinguish with array to feed to the child. Then we call `processList()` on that fed array.
 
-Finally, we terminate the finished child processes with `waitpid()`. 
+Finally, the parent process uses `waitpid()` to wait for each child process to terminate and collect its exit status before exiting
 
 ### How to compile
 
