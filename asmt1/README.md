@@ -27,7 +27,23 @@ Else, `fork()` returns `0` and we can proceed to obtain the child's pid with `ge
 
 Finally, we terminate the finished child processes with `waitpid()`. 
 
+### How to compile
 
+1. In the same directory as `Makefile`, run:
+
+```shell
+make
+```
+
+This will yield an executable named `main.out`.
+
+### How to execute
+
+1. In the same directory as `main.out`, run:
+
+```shell
+./main.out
+```
 
 
 
